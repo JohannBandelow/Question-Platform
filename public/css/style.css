@@ -1,0 +1,21 @@
+body {
+  background-color: #eceff1;
+}
+
+.container {
+  padding: 1rem;
+  margin-top: 5vh;
+}
+
+.navbar {
+  height: 8vh;
+  padding-top: 0.525rem;
+}
+
+.navbar-a {
+  padding: 0;
+}
+
+.logo {
+  height: 4vh;
+}

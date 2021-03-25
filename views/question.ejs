@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunta | Ask me</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/navbar.ejs')%> 
+
+    <div class="container">
+        <hr>
+        <h1><%= question.title  %></h1>
+        <br>
+        <p><%= question.description  %></p>
+        <hr>
+
+        <form method="POST" action="/answer">
+            <h3>Responda!</h3>
+            <br>
+            <label>Sua resposta:</label>
+            <br>
+            <textarea placeholder="Digite aqui sua resposta!" name="body" class="form-control"></textarea><br>
+            <button type="submit" class="btn btn-primary">Responder!</button>
+            <input type="hidden" name="question" value="<%= question.id  %> ">
+        </form>
+        <hr>
+        <h3>Respostas:</h3>
+        <hr>
+        <% answers.forEach((answer) => { %>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <p><%= answer.body  %> <br></p>
+                </div>
+            </div>
+        <% }) %> 
+
+
+    </div>
+    
+</body>
+<%- include('partials/scripts.ejs') %> 
