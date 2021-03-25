@@ -20,6 +20,5 @@ Project made with help from Guia do programador Node.js course, this projects us
 > #### To easily and faster create a front-end page, learned how to use *Bootstrap classes*   
 
 > ### EJS  
-> #### To easily create a front-end tha receives information from the back-end. Learned how to pass variables, and create
-> #### *forEach() loops*  
+> #### To easily create a front-end tha receives information from the back-end. Learned how to pass variables, and create *forEach() loops*  
  
